@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', 'sans-serif';
 }
 body {
     background: rgb(255,255,255);
@@ -8,136 +9,74 @@ body {
     background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(186,130,63,0.44861694677871145) 100%);
     background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(186,130,63,0.44861694677871145) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ba823f",GradientType=1);
-    font-family: 'Roboto', 'sans-serif';
 }
 
-/* Header */
+header h1 span,
+span,
+.introduction,
+.inImg p {
+    font-style: italic;
+}
+
+
+h1 span, 
+p .yellow {
+    color: rgb(255, 199, 44);
+}
+
+h2,
+.introduction {
+    font-weight: 300;
+}
 
 header {
     background-image: url(../img/fallout-img.jpg);
-    background-size: 100% auto;
-    height: 630px;
+    background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-color: #000;
 }
 
-header h1 {
-    padding-top: 140px;
-    padding-left: 60px;
-    margin: 0;
-    font-size: 80px;
+header > div {
+    padding: 250px;
+}
+
+h1 {
     color: white;
-    letter-spacing: 0.01em;
+    font-size: 100px;
 }
 
-header h1 span {
-    font-style: italic;
+h1 span {
     font-weight: 100;
-    color: rgb(255, 174, 0);
 }
 
-.rotate {
-    margin-top: 15px;
-    background-color: orange;
-    margin-left: 60px;
-    width: 60px;
-    height: 212px;
-    float: left;
+h2 {
+    font-size: 32px;
+    padding: 25px 0;
 }
-.rotate p {
-    margin: 0;
-    font-family: Roboto;
-    color: white;
-    font-weight: 600;
-    font-size: 36px;
-    width: 233px;
-    height: 214px;
-    transform: rotate(270deg);
-    text-align: center;
-}
-
-
-.text_header {
-    padding-top: 30px;
-    padding-left: 150px;
-    width: 300px;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 0.025em;
-}
-
-
-/* Section */
 
 li {
     list-style: none;
 }
 
-.container li::before {
-    content: "•";
-    height: 1px;
-    padding-bottom: 10px;
-    padding-right: 40px;
-    float: left;
-    font-size: 36px;
-    margin-top: -10px;
-}
-
-h2 {
-    padding: 25px 0;
-    font-weight: 300;
-    font-size: 18px;
-}
 
 p {
-    font-size: 16px;
+    font-size: 28px;
     font-weight: 400;
     text-align: justify;
 }
-li p {
-    line-height: 24px;
-    text-align: none;
-}
+
 span {
     font-weight: 600;
-    font-style: italic;
-}
-
-p span:last-child {
-    color: rgb(255, 199, 44);
-}
-
-li p .black {
     color: black;
 }
 
-
-.barre_jaune {
-    margin: 100px 0 0 230px;
-    width: 9px;
-    height: 365px;
-    background-color: rgb(255, 199, 44);
-    border-radius: 2px;
-    float: left;
-}
-
-.container {
-    padding: 100px 310px 100px 310px;
-}
 
 footer {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 100%);
     height: 290px;
 }
 
-footer p {
-    position: relative;
-    top: -140px;
-    display: inline;
-    color: white;
-    padding-right: 200px;
-}
 footer ul {
     padding: 0 10%;
     text-align: center;
@@ -145,14 +84,18 @@ footer ul {
 footer li {
     display: inline;
     position: relative;
-    top: -80px;
+    top: -150px;
+}
+
+footer li img {
+    width: 260px;
 }
 
 footer li:first-child {
     float: left;
 }
 
-footer .goodJob {
+footer .centered_image {
     top: 30px;
 }
 
@@ -160,76 +103,112 @@ footer li:last-child {
     float: right;
 }
 
-footer li img {
-    width: 190px;
-}
-
-
-.inImg {
-    font-weight: 600;
-    color: rgb(51, 51, 51);
+footer p {
     position: relative;
-    top: -5px;
-    left: 12%;
-    width: 148px;
-}
-.inImg p {
+    top: -200px;
+    left: 13%;
+    width: 200px;
     text-align: center;
-    position: relative;
     color: rgb(51, 51, 51);
     padding-right: 0;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    font-style: italic;
 }
-.inImg p span {
-    color: rgb(51, 51, 51);
+footer p span {
     font-weight: 300;
 }
 
-.inImg p span span {
-    font-size: 20px;
+.company {
+    background-color: orange;
+    float: left;
+    height: 240px;
+    margin-top: 15px;
+    width: 60px;
 }
-.inImg p span span:last-child {
+.company p {
+    color: white;
     font-weight: 600;
+    font-size: 42px;
+    height: 245px;
+    transform: rotate(270deg);
+    text-align: center;
+    margin: 0;
+    width: 255px;
+}
+
+.introduction {
+    color: white;
+    font-size: 42px;
+    padding-top: 30px;
+    padding-left: 90px;
+    letter-spacing: 0.025em;
+    width: 350px;
+}
+
+.container {
+    padding: 100px 20% 200px 20%;
+}
+
+.container li {
+    line-height: 40px;
+}
+
+.container li::before {
+    content: "•";
+    float: left;
+    font-size: 60px;
+    height: 1px;
+    padding-right: 40px; 
+}
+
+.rod {
+    margin: 100px 0 0 230px;
+    width: 9px;
+    height: 550px;
+    background-color: rgb(255, 199, 44);
+    border-radius: 2px;
+    float: left;
 }
 
 
-@media screen and (max-width: 768px) {
-    header {
-        height: 445px;
-        background-size: 125% auto;
-    }
 
+@media screen and (max-width: 500px) {
+    
     header h1 {
-        padding-top: 14%;
-        padding-left: 60px;
         font-size: 50px;
     }
 
-    .rotate {
-        width: 48px;
-        height: 140px;
+    header > div {
+        padding: 15px 15px 25px 15px;
     }
 
-    .rotate p {
-        font-size: 24px;
+    .company {
+        width: 30px;
+        height: 110px;
+        margin-top: 5px;
+    }
+
+
+    .company p {
+        font-size: 20px;
+        width: 116px;
+        height: 110px;
+    }
+
+    .introduction {
+        padding-left: 40px;
+        padding-top: 5px;
         width: 160px;
-        height: 140px;
+        font-size: 20px;
     }
 
-    .text_header {
-        padding-left: 125px;
-        width: 220px;
-        font-size: 24px;
-    }
-
-    .barre_jaune {
-        margin: 100px 0 0 20px;
+    .rod {
+        margin: 30px 0 0 20px;
+        height: 370px;
     }
 
     .container {
-        padding: 100px 70px 100px 100px;
+        padding: 30px 50px 100px 50px;
     }
 
     .container p {
@@ -240,133 +219,293 @@ footer li img {
         font-size: 14px;
     }
 
-    .container li p {
-        font-size: 12px;
+    .container li::before {
+        font-size: 20px;
+    }
+
+    .container li {
+        line-height: 20px;
     }
 
     footer li img {
-        width: 130px;
+        width: 100px;
     }
 
-    .inImg {
-        top: 25px;
-        left: 11%;
-        width: 105px;
+    footer li {
+        display: inline;
+        position: relative;
+        top: -40px;
     }
 
-    .inImg p {
-        font-size: 16px;    
+    
+    footer p {
+        font-size: 10px;
+        top: -80px;
+        left: 18%;    
+        width: 70px;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+
+    header > div {
+        padding: 30px;
     }
 
-    .inImg p span span{
-        font-size: 14px;    
+    header h1 {
+        font-size: 50px;
     }
+
+    .company {
+        width: 48px;
+        height: 140px;
+    }
+
+    .company p {
+        font-size: 24px;
+        width: 160px;
+        height: 140px;
+    }
+
+    .introduction {
+        padding-left: 55px;
+        width: 220px;
+        font-size: 24px;
+    }
+
+    .rod {
+        margin: 30px 0 0 20px;
+        height: 370px;
+    }
+
+    .container {
+        padding: 30px 50px 100px 50px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container li::before {
+        font-size: 30px;
+    }
+
+    .container li {
+        line-height: 24px;
+    }
+    
     footer {
         height: 240px;
+    }
+
+    footer li img {
+        width: 120px;
+    }
+
+    footer li {
+        display: inline;
+        position: relative;
+        top: -60px;
+    }
+
+    footer p {
+        font-size: 12px;
+        top: -95px;
+        left: 18%;    
+        width: 80px;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    header {
-        height: 500px;
-        background-size: 110% auto;
+
+    header > div {
+        padding: 90px;
     }
 
     header h1 {
-        padding-top: 10%;
-        padding-left: 60px;
         font-size: 60px;
     }
 
-    .rotate {
+    .company {
         width: 48px;
         height: 160px;
     }
 
-    .rotate p {
+    .company p {
         font-size: 28px;
         width: 176px;
         height: 160px;
     }
 
-    .text_header {
+    .introduction {
         padding-top: 15px;
-        padding-left: 130px;
+        padding-left: 70px;
         width: 235px;
         font-size: 28px;
     }
 
-    .barre_jaune {
-        margin: 100px 0 0 70px;
+    .rod {
+        margin: 100px 0 0 30px;
     }
 
     .container {
-        padding: 100px 120px 100px 150px;
+        padding: 100px 70px 150px 70px;
     }
 
     .container p {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .container h2 {
-        font-size: 16px;
+        font-size: 22px;
     }
 
-    .container li p {
-        font-size: 14px;
+    .container li::before {
+        font-size: 40px;
     }
 
     footer li img {
         width: 160px;
     }
 
-    .inImg {
-        top: 5px;
-        left: 11%;
+    footer li {
+        display: inline;
+        position: relative;
+        top: -80px;
+    }
+    
+    footer p {
+        font-size: 18px;
+        top: -130px;
+        left: 11%;    
         width: 130px;
-    }
-    .inImg p {
-        font-size: 20px;    
-    }
-    .inImg p span span{
-        font-size: 18px;    
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    header {
-        height: 520px;
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    header > div {
+        padding: 140px;
     }
 
     header h1 {
-        padding-top: 10%;
-        padding-left: 60px;
         font-size: 70px;
     }
 
-    .rotate {
+    p {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .company {
         width: 48px;
         height: 180px;
     }
 
-    .rotate p {
+    .company p {
         font-size: 32px;
         width: 190px;
         height: 180px;
     }
 
-    .text_header {
+    .introduction {
         padding-top: 25px;
-        padding-left: 130px;
+        padding-left: 70px;
         width: 270px;
         font-size: 32px;
     }
 
-    .barre_jaune {
-        margin: 100px 0 0 140px;
+    .rod {
+        margin: 100px 0 0 70px;
     }
 
     .container {
-        padding: 100px 200px 100px 220px;
+        padding: 100px 120px 150px 120px;
+    }
+
+    .container li::before {
+        font-size: 50px;
+    }
+
+    footer li {
+        top: -110px;
+    }
+
+    footer li img {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: 22px;
+        top: -160px;
+        left: 10%;
+        width: 170px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+
+    header > div {
+        padding: 180px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .introduction {
+        font-size: 36px;
+        width: 300px;
+    }
+    
+    .company {
+        height: 210px;
+    }
+
+    .company p {
+        font-size: 36px;
+        height: 210px;
+        width: 227px;
+    }
+
+    .rod {
+        margin: 100px 0 0 130px;
+    }
+
+    .container {
+        padding: 100px 15% 150px 15%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    footer li {
+        top: -110px;
+    }
+
+    footer li img {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: 22px;
+        top: -160px;
+        left: 10%;
+        width: 170px;
     }
 }
